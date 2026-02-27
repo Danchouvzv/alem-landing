@@ -16,7 +16,7 @@ const Reviews = () => {
       position: 'Начальник СХУиБ',
       company: 'KOMMESK',
       companyColor: '#e8713a',
-      logoUrl: 'https://msp.kz/baza-tovarnyh-znakov.php?base=signsgas&id=3a4h6i28'
+      logoUrl: 'https://eurobak.kz/wp-content/uploads/2022/11/website-images-3.jpg'
     },
     {
       text: 'Компания Alem Contact успешно выполнила работы по поставке офисной мебели для нашего объекта. Все задачи были выполнены с учетом всех наших пожеланий, быстро и профессионально. Рекомендуем Alem Contact для дальнейшего сотрудничества.',
