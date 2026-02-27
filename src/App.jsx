@@ -2,6 +2,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Services from './components/Services'
 import Advantages from './components/Advantages'
+import Reviews from './components/Reviews'
 import ContactForm from './components/ContactForm'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services />
       <Advantages />
+      <Reviews />
       <ContactForm />
       <Contacts />
       <Footer />

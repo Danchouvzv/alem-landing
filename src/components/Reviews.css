@@ -1,1 +1,102 @@
-/* Reviews section - not used in current layout */
+.reviews {
+  background: #fff;
+  padding: 80px 0 100px;
+}
+
+.reviews-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 60px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.review-card {
+  padding: 0;
+}
+
+.review-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.review-logo-circle {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+}
+
+.review-body {
+  flex: 1;
+}
+
+.review-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.review-author {
+  margin-top: auto;
+}
+
+.review-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.review-position {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+.review-company {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .reviews-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .review-logo-circle {
+    width: 70px;
+    height: 70px;
+  }
+  .review-card-inner {
+    gap: 16px;
+  }
+}
