@@ -5,7 +5,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    email: ''
+    text: ''
   })
   const [errors, setErrors] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -33,10 +33,6 @@ const ContactForm = () => {
       newErrors.phone = 'Неверный формат телефона'
     }
     
-    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Неверный формат email'
-    }
-    
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -61,7 +57,7 @@ const ContactForm = () => {
       
       if (response.ok) {
         setIsSuccess(true)
-        setFormData({ name: '', phone: '', email: '' })
+        setFormData({ name: '', phone: '', text: '' })
         setTimeout(() => setIsSuccess(false), 5000)
       } else {
         const error = await response.json()
@@ -81,7 +77,7 @@ const ContactForm = () => {
       <div className="container">
         <div className="leadform-content">
           <h2 className="leadform-title">
-            Оставьте заявку<br />и мы свяжемся с вами
+            Укажите ваши контактные даные чтобы мы<br />смогли связаться с вами!
           </h2>
           
           {isSuccess && (
@@ -99,7 +95,7 @@ const ContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={errors.name ? 'error' : ''}
-                  placeholder="Ваше имя"
+                  placeholder="Имя"
                   required
                 />
                 {errors.name && <span className="error-message">{errors.name}</span>}
@@ -112,7 +108,7 @@ const ContactForm = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   className={errors.phone ? 'error' : ''}
-                  placeholder="Телефон"
+                  placeholder="Номер"
                   required
                 />
                 {errors.phone && <span className="error-message">{errors.phone}</span>}
@@ -120,14 +116,12 @@ const ContactForm = () => {
               
               <div className="form-field-wrapper">
                 <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
+                  type="text"
+                  name="text"
+                  value={formData.text}
                   onChange={handleChange}
-                  className={errors.email ? 'error' : ''}
-                  placeholder="Email"
+                  placeholder="Текст"
                 />
-                {errors.email && <span className="error-message">{errors.email}</span>}
               </div>
               
               <button 

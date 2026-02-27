@@ -6,11 +6,11 @@ const Contacts = () => {
       <div className="container">
         <div className="contacts-label">НАШИ КОНТАКТЫ</div>
         <div className="contacts-phones">
-          <a href="tel:+77001234567" className="phone">+7 (700) 123-45-67</a>
-          <a href="tel:+77001234568" className="phone">+7 (700) 123-45-68</a>
+          <a href="tel:+77472501818" className="phone">+7 747 250 1818</a>
+          <a href="tel:+77472501881" className="phone">+7 747 250 1881</a>
         </div>
         <div className="contacts-tagline">
-          Создаем комфортные рабочие пространства с 2002 года
+          Alem Contact – стандарт качества в офисной мебели
         </div>
       </div>
     </section>
