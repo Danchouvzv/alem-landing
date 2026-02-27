@@ -1,58 +1,34 @@
-import { useState, useEffect } from 'react'
 import './Header.css'
 
-const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
+const Header = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      setMobileMenuOpen(false)
     }
   }
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container">
-        <div className="logo" onClick={() => scrollToSection('about')}>
-          <span className="logo-text">Alem Contract</span>
-        </div>
-        <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
-          <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>
-            <span>О нас</span>
-          </a>
-          <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>
-            <span>Услуги</span>
-          </a>
-          <a href="#clients" onClick={(e) => { e.preventDefault(); scrollToSection('clients') }}>
-            <span>Клиенты</span>
-          </a>
-          <a href="#contacts" onClick={(e) => { e.preventDefault(); scrollToSection('contacts') }}>
-            <span>Контакты</span>
-          </a>
+    <header className="header">
+      <div className="header-inner">
+        <nav className="header-nav">
+          <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>О нас</a>
+          <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services') }}>Услуги</a>
+          <a href="#contacts" onClick={(e) => { e.preventDefault(); scrollToSection('contacts') }}>Контакты</a>
         </nav>
-        <button 
-          className={`burger-menu ${mobileMenuOpen ? 'active' : ''}`}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Меню"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div className="header-logo" onClick={() => scrollToSection('about')}>
+          <svg className="logo-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M24 4L8 40H18L24 26L30 40H40L24 4Z" fill="#C8A951"/>
+            <path d="M24 4L30 40H40L24 4Z" fill="#B8963F"/>
+          </svg>
+          <div className="logo-text-group">
+            <span className="logo-line1">ALEM</span>
+            <span className="logo-line2">CONTRACT</span>
+          </div>
+        </div>
       </div>
     </header>
   )
 }
 
 export default Header
-

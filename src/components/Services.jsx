@@ -4,106 +4,103 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: 'Проектирование',
-      desc: 'Создаем 3D-модели и планировочные решения, учитывая каждый сантиметр вашего пространства.',
+      title: 'Производство мебели',
+      desc: 'Мы предоставляем услуги по производству офисной мебели, гарантируя высокое качество и современный дизайн для вашего рабочего пространства.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="3" y1="9" x2="21" y2="9"></line>
-          <line x1="9" y1="21" x2="9" y2="9"></line>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="32" cy="32" r="12" />
+          <path d="M32 16V12" /><path d="M32 52V48" />
+          <path d="M16 32H12" /><path d="M52 32H48" />
+          <path d="M20.7 20.7L17.9 17.9" /><path d="M46.1 46.1L43.3 43.3" />
+          <path d="M43.3 20.7L46.1 17.9" /><path d="M17.9 46.1L20.7 43.3" />
+          <circle cx="32" cy="32" r="6" />
         </svg>
-      ),
-      color: '#4e54c8'
+      )
     },
     {
       id: 2,
-      title: 'Поставка мебели',
-      desc: 'Прямые поставки от ведущих европейских и азиатских производителей.',
+      title: 'Дизайн мебели',
+      desc: 'Мы предлагаем услуги по созданию дизайна мебели, чтобы ваш офис выглядел стильно и современно.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="1" y="3" width="15" height="13"></rect>
-          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-          <circle cx="5.5" cy="18.5" r="2.5"></circle>
-          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="14" y="14" width="36" height="30" rx="2" />
+          <path d="M14 24H50" />
+          <path d="M30 40L36 30L42 40" />
+          <path d="M22 38L28 30" />
+          <circle cx="24" cy="32" r="2" />
         </svg>
-      ),
-      color: '#ff6b6b'
+      )
     },
     {
       id: 3,
-      title: 'Custom Мебель',
-      desc: 'Изготовление уникальной мебели по индивидуальным эскизам для нестандартных задач.',
+      title: 'Проектирование пространств',
+      desc: 'Мы проектируем офисные пространства, предлагая оптимальные решения по расстановке мебели для максимального удобства и эффективности.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="12" y="16" width="40" height="28" rx="2" />
+          <path d="M12 24H52" />
+          <path d="M20 24V44" />
+          <path d="M36 32H44" />
+          <path d="M36 38H44" />
+          <rect x="24" y="28" width="8" height="8" />
         </svg>
-      ),
-      color: '#fdbb2d'
+      )
     },
     {
       id: 4,
-      title: 'Сборка и монтаж',
-      desc: 'Сертифицированные сборщики быстро и аккуратно соберут всю мебель.',
+      title: 'Сборка мебели',
+      desc: 'Мы предоставляем услуги сборки мебели, обеспечивая быстрое и качественное выполнение работ.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M24 40L16 48" />
+          <path d="M12 44L20 52" />
+          <path d="M40 24L48 16" />
+          <path d="M44 12L52 20" />
+          <path d="M28 36L36 28" />
+          <path d="M20 28L36 44" />
         </svg>
-      ),
-      color: '#20bdff'
+      )
     },
     {
       id: 5,
-      title: 'Акустика',
-      desc: 'Решения для шумоподавления: акустические панели, кабины и перегородки.',
+      title: 'Бесплатная доставка',
+      desc: 'Мы предлагаем бесплатную доставку, чтобы обеспечить вам максимально удобный и приятный опыт покупки.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
-          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-          <line x1="12" y1="19" x2="12" y2="23"></line>
-          <line x1="8" y1="23" x2="16" y2="23"></line>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="8" y="20" width="30" height="22" rx="2" />
+          <path d="M38 28H48L54 36V42H38V28Z" />
+          <circle cx="20" cy="46" r="4" />
+          <circle cx="46" cy="46" r="4" />
         </svg>
-      ),
-      color: '#11998e'
+      )
     },
     {
       id: 6,
-      title: 'Обслуживание',
-      desc: 'Постгарантийный сервис и ремонт мебели в течение всего срока эксплуатации.',
+      title: 'Послепродажное обслуживание',
+      desc: 'Мы предоставляем послепродажное обслуживание, гарантируя поддержку и помощь после покупки.',
       icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M40 20C40 14 36 10 32 10C28 10 24 14 24 20" />
+          <path d="M20 28V24C20 24 20 20 24 20" />
+          <path d="M44 28V24C44 24 44 20 40 20" />
+          <path d="M18 28C16 28 14 30 14 32V36C14 38 16 40 18 40" />
+          <path d="M46 28C48 28 50 30 50 32V36C50 38 48 40 46 40" />
+          <path d="M46 40C46 48 40 52 32 52" />
+          <circle cx="32" cy="54" r="2" />
         </svg>
-      ),
-      color: '#8e44ad'
+      )
     }
   ]
 
   return (
     <section id="services" className="services section">
-      <div className="container relative-z">
-        <div className="services-header">
-          <span className="services-tag">Комплексный подход</span>
-          <h2 className="services-title">Наши услуги</h2>
-          <p className="services-subtitle">
-            Мы берем на себя все этапы: от первой идеи до финальной уборки после монтажа.
-          </p>
-        </div>
-
-        <div className="services-grid-creative">
+      <div className="container">
+        <h2 className="services-title">Наши услуги</h2>
+        <div className="services-grid">
           {services.map((service) => (
-            <div key={service.id} className="service-card-3d">
-              <div 
-                className="service-icon-bg"
-                style={{ '--accent-color': service.color }}
-              >
-                <div className="service-icon" style={{ color: service.color }}>{service.icon}</div>
-              </div>
-              <h3 className="service-name">{service.title}</h3>
+            <div key={service.id} className="service-card">
+              <div className="service-icon">{service.icon}</div>
               <p className="service-desc">{service.desc}</p>
-              
-              <div className="service-hover-content">
-                <span className="arrow-link">Подробнее →</span>
-              </div>
             </div>
           ))}
         </div>
@@ -113,4 +110,3 @@ const Services = () => {
 }
 
 export default Services
-
